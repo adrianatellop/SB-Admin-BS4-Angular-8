@@ -4,10 +4,12 @@ $topnav-background-color: #222;
     position: fixed;
     z-index: 1000;
     top: 56px;
+    top: 0px;
     left: 235px;
     width: 235px;
     margin-left: -235px;
     margin-bottom: 48px;
+    margin-bottom: 0px;
     border: none;
     border-radius: 0;
     overflow-y: auto;
@@ -161,7 +163,7 @@ $topnav-background-color: #222;
 }
 
 .toggle-button {
-    position: fixed;
+    //position: fixed;
     width: 236px;
     cursor: pointer;
     padding: 12px;

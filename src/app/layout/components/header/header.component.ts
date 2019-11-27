@@ -9,6 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
     public pushRightClass: string;
+    public navopen: boolean = true;
 
     constructor(private translate: TranslateService, public router: Router) {
 
@@ -21,6 +22,10 @@ export class HeaderComponent implements OnInit {
                 this.toggleSidebar();
             }
         });
+    }
+
+    toggle( open: boolean = null ){
+        if ( open ) { this.navopen = false; }
     }
 
     ngOnInit() {
@@ -38,8 +43,10 @@ export class HeaderComponent implements OnInit {
     }
 
     rltAndLtr() {
+        /*
         const dom: any = document.querySelector('body');
         dom.classList.toggle('rtl');
+        */
     }
 
     onLoggedout() {

@@ -1,7 +1,22 @@
 $topnav-background-color: #222;
 :host {
     .navbar {
+
+        position: absolute;
+
+        right: 0;
+        top:0;
+        width:100%;
+        //left: 60px !important;
         background-color: $topnav-background-color;
+        
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+
+
         .navbar-brand {
             color: #fff;
         }
@@ -12,6 +27,11 @@ $topnav-background-color: #222;
             }
         }
     }
+
+    .pass {
+        //left: 235px !important;
+    }
+
     .messages {
         width: 300px;
         .media {
